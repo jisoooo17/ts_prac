@@ -12,3 +12,24 @@ let age2 = {}; // "?"를 사용한 경우, age 속성은 선택 사항이므로 
 // 변수에 여러가지 타입의 데이터 할당
 let name2 = "kim";
 let name3 = "kim";
+// 함수 파라미터와 리턴값 타입 지정
+function test(x) {
+    return x * 2;
+}
+console.log(test(123));
+let john = [100, false];
+let jane = {
+    name: "kim",
+    age: 20
+};
+let lee = {
+    age: 20,
+    weight: 100
+};
+// class 타입 설정
+// 괄호 내에 미리 name 이렇게 변수를 만들어놔야 constructor 안에서 this.name 이렇게 사용가능
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+}
